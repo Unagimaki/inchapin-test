@@ -287,11 +287,17 @@
         width: min(4.95vw, 38px);
         height: min(0.26vw, 2px);
     }
+    .burger-menu:hover .burger-menu-button_span:first-child {
+        transform: translateY(-0.5vw);
+    }
+
+    .burger-menu:hover .burger-menu-button_span:last-child {
+        transform: translateY(0.5vw);
+    }
 }
 
 @media (max-width: 360px) {
     .header {
-        /* height: min(11.39vw, 41px); */
         padding-bottom: min(5.56vw, 20px);
         padding-top: min(5.56vw, 20px);
     }
@@ -319,5 +325,12 @@
     .nav-center {
         width: min(36.11vw, 130px);
         height: min(5.83vw, 21px);
+    }
+    .burger-menu:hover .burger-menu-button_span:first-child {
+        transform: translateY(-1.5vw);
+    }
+
+    .burger-menu:hover .burger-menu-button_span:last-child {
+        transform: translateY(1.5vw);
     }
 }
