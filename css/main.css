@@ -1,0 +1,104 @@
+.main {
+    margin-top: min(6.82vw, 131px);
+}
+
+.main_img {
+    width: 100%;
+    height: min(31.25vw, 600px);
+    background-image: url('../assets/images/main/main.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main_info {
+    width: inherit;
+    justify-content: space-between;
+    display: flex;
+}
+.first-screen {
+    height: calc(var(--vh, 1vh) * 100);
+}
+.main_title {
+    margin-top: min(2.6vw, 50px);
+    width: min(44.9vw, 862px);
+    height: min(7.14vw, 137px);
+}
+.main_title img {
+    width: inherit;
+    height: inherit;
+}
+.main_text {
+    font-size: min(1.61vw, 30px);
+    color: #2F80ED;
+    font-family: Proxima Nova Regular;
+    margin-top: min(5.89vw, 113px);
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .first-screen {
+        height: 100vh;
+    } 
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .main_img {
+        height: min(35.14vw, 506px);
+    }
+    .main_text {
+        font-size: min(1.81vw, 26px);
+    }
+    .main_title {
+        width: min(49.81vw, 737.3px);
+        height: min(7.92vw, 114px);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main_img {
+        height: min(40.14vw, 411px);
+    }
+    .text {
+        font-size: min(1.86vw, 19px);
+    }
+    .main_title {
+        width: min(54.07vw, 553.7px);
+        height: min(8.59vw, 88px);
+    }
+}
+
+@media (min-width: 361px) and (max-width: 769px) {
+    .main_img {
+        background-image: url('../assets/images/main/main_768.png');
+        height: min(63.41vw, 487px);
+    }
+    .main_info {
+        flex-direction: column;
+    }
+    .main_text {
+        font-size: min(3.39vw, 26px);
+        margin-top: min(5.21vw, 40px);
+    }
+    .main_title {
+        margin-top: min(5.6vw, 43px);
+        width: 100%;
+        height: min(14.23vw, 109.3px);
+    }
+}
+@media (max-width: 360px) {
+    .main_img {
+        background-image: url('../assets/images/main/main_360.png');
+        height: min(86.94vw, 313px);
+    }
+    .main_info {
+        flex-direction: column;
+    }
+    .main_text {
+        font-size: min(3.61vw, 13px);
+        margin-top: min(5.56vw, 20px);
+    }
+    .main_title {
+        width: 100%;
+        margin-top: min(5.56vw, 20px);
+        height: min(14.13vw, 50.86px);
+    }
+}

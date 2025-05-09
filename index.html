@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/video.css">
+    <link rel="stylesheet" href="./css/loader.css">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="loader" class="loader">
+        <span class="loader-rect"></span>
+    </div>
+
+
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+    
+                <div class="nav-left">
+                    <div class="burger-menu">
+                        <div class="burger-menu-button">
+                            <span class="burger-menu-button_span"></span>
+                            <span class="burger-menu-button_span"></span>
+                            <span class="burger-menu-button_span"></span>
+                        </div>
+                        <div class="burger-menu-text">Меню</div>
+                    </div>
+    
+                    <div class="menu-left">
+                        <div class="menu-left-scroll">
+                            <div class="menu-left-inner">
+                                <a class="menu-left-flat" href="#">Выбрать квартиру</a>
+                                <a class="menu-left-flat" href="#">Выбрать квартиру</a>
+                            </div>
+                        </div>
+                        <img src="./assets/images/header/arrow.png" alt="arrow">
+                    </div>
+    
+                    <button class="callback-btn-mobile">
+                        <img src="./assets/images/header/phone.png" alt="phone">
+                    </button>
+                </div>
+    
+    
+                <div class="nav-center">
+                    <img src="./assets/images/header/header_logo.png" alt="header_logo">
+                </div>
+    
+                <div class="nav-right">
+                    <li><a class="number" href="tel:+79001234567">+7 (900) 123-45-67</a></li>
+                    <div class="nav-right-scroll">
+                        <div class="nav-right-inner">
+                            <button class="callback-btn">Заказать звонок</button>
+                            <button class="callback-btn">Заказать звонок</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="menu-left menu-mobile">
+                    <a class="menu-left-flat" href="#">Выбрать квартиру</a>
+                    <img src="./assets/images/header/arrow.png" alt="arrow">
+                </ul>
+                <button class="callback-btn-min">
+                    <img src="./assets/images/header/phone.png" alt="phone">
+                </button>
+            </nav>
+        </div>
+    </header>
+    <section class="form closed_form">
+        <button class="form_close_button"></button>
+        <div class="form_inner">
+            <div class="form_title">Заказать звонок</div>
+            <form id="data" class="form_item_wrapper">
+                <label class="form_item">
+                    <div class="form_name form-active">ваше Имя</div>
+                    <input class="form_input" type="text" name="name" required>
+                </label>
+    
+                <label class="form_item">
+                    <div class="form_name">Телефон</div>
+                    <input class="form_input" id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                        required placeholder="+7 (___) ___-__-__">
+                </label>
+    
+                <label class="form_item">
+                    <div class="form_name">E-mail</div>
+                    <input class="form_input" type="email" name="email" required>
+                </label>
+    
+            </form>
+            <div class="form_text">Нажимая на кнопку «Отправить», вы ознакомлены <br /> и соглашаетесь с политикой обработки
+                персональных данных</div>
+            <button form="data" class="send_button">Отправить</button>
+        </div>
+    </section>
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-content">
+            <video id="projectVideo" controls>
+                <source src="./assets/video/video.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <button id="closeVideo">✕</button>
+        </div>
+    </div>
+
+    <div id="my-scrollbar">
+        
+
+    <section class="main first-screen">
+        <div class="container">
+            <div class="main_img">
+            </div>
+            <div class="main_info">
+                <div class="main_text">Дом бизнес-класса <br/>для ценителей роскоши</div>
+                <div class="main_title">
+                    <img src="./assets/images/main/main_title.png" alt="main_title">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-wrapper">
+            <div class="image">
+                <div class="image_title">О проекте</div>
+                <div class="image_wrapper">
+                    <img class="image-wrapper-main" src="./assets/images/about/about.png" alt="house">
+                    <img class="image-wrapper-blue" src="./assets/images/about/blue.png" alt="blue">
+                </div>
+
+            </div>
+            <div class="info">
+                <div class="blue"></div>
+                <div class="info_title">уютное и безопасное <br/> пространство для счастливой, <br/> <span>спокойной и размеренной <br /> жизни</span></div>
+                <div class="info_text"><span>Квартиры от 65 до 356 м2 с чистовой отделкой,</span> <br/> балконами, лоджиями и террасами В собственной <br/> ЗАКРЫТОЙ охраняемой территории.
+                </div>
+                <div class="info_video">
+                    <div class="info_video_text">
+                        <div class="video_title">ВИДЕО о ПРОЕКТЕ</div>
+                        <div class="video_diration">1:25 минут</div>
+                    </div>
+                    <div class="info_video_player">
+                        <div class="info_video_player_button">
+                            <div class="info_video_player_text">Play</div>
+                            <img src="./assets/images/about/play_icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script src="scripts/index.js"></script>
+<script src="scripts/video.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.7.4/dist/smooth-scrollbar.js"></script>
+<script>
+    const Scrollbar = window.Scrollbar;
+
+    // Убедись, что элемент с id="my-scrollbar" есть в DOM
+    Scrollbar.init(document.querySelector('#my-scrollbar'));
+</script>
+</body>
+</html>

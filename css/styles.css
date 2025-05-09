@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* важно: отключаем стандартный скролл */
+}
+
+#my-scrollbar {
+    height: 100vh;
+    overflow: auto;
+    /* нужно для скролла внутри */
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+li {
+    list-style-type: none;
+}
+body {
+    overflow-x: hidden;
+}
+.container {
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+button {
+    background: none;
+    border: none;
+}
+body.no-scroll {
+    overflow: hidden; 
+}
+
+@media (min-width: 1441px) {
+    .container {
+        width: min(91.67vw, 1760px);
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .container {
+        width: min(94.44vw, 1360px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: min(94.14vw, 964px);
+    }
+}
+@media (min-width: 361px) and (max-width: 768px) {
+    .container {
+        width: min(89.58vw, 688px);
+    }
+}
+@media (max-width: 360px) {
+    .container {
+        width: min(88.89vw, 320px);
+    }
+}

@@ -1,0 +1,323 @@
+/* ==== ОБЩИЕ СТИЛИ ==== */
+
+.header {
+    width: 100%;
+    padding-top: min(2.08vw, 40px);
+    padding-bottom: min(1.46vw, 28px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+/* Семиболд, капс */
+.burger-menu-text,
+.menu-left a,
+.callback-btn,
+.number {
+    font-family: 'Proxima Nova Semibold';
+}
+
+.burger-menu-text,
+.menu-left a,
+.callback-btn {
+    text-transform: uppercase;
+}
+
+/* Общий размер шрифта */
+.burger-menu-text,
+.menu-left-flat,
+.callback-btn {
+    font-size: min(0.78vw, 15px);
+}
+.menu-mobile {
+    display: none;
+}
+.callback-btn-mobile, .callback-btn-min {
+    display: none;
+}
+
+
+/* ===== ГЛАВНЫЙ НАВИГАТОР ===== */
+
+.main-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* border: 1px solid red; */
+}
+.menu-left-flat {
+    white-space: nowrap;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: min(2.24vw, 43px);
+    align-items: center;
+}
+.burger-menu-button_span {
+    transition: transform 0.3s ease;
+}
+.burger-menu {
+    display: flex;
+    gap: min(0.78vw, 15px);
+    cursor: pointer;
+}
+.burger-menu:hover .burger-menu-button_span:first-child {
+    transform: translateY(-0.2vw);
+}
+
+.burger-menu:hover .burger-menu-button_span:last-child {
+    transform: translateY(0.2vw);
+}
+
+.burger-menu-button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: min(0.26vw, 5px);
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(9.74vw, 187px);
+    height: min(1.56vw, 30px);
+}
+.nav-center img {
+    width: inherit;
+    height: inherit;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: min(2.34vw, 43px);
+}
+.nav-right-inner {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+.nav-right-scroll {
+    height: min(0.78vw, 15px);
+    /* height: inherit; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.nav-right-scroll:hover .nav-right-inner {
+    transform: translateY(-50%);
+}
+.callback-btn {
+    color: #2F80ED;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+/* ===== ЭЛЕМЕНТЫ ===== */
+
+.menu-left {
+    display: flex;
+    gap: min(0.63vw, 12px);
+    align-items: center;
+    justify-content: center;
+    width: min(12.5vw, 240px);
+    height: min(2.66vw, 51px);
+    border-radius: min(6.18vw, 118.65px);
+    background-color: #2F80ED;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-left-scroll {
+    height: min(2.66vw, 51px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.menu-left-inner {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.menu-left-flat {
+    color: #fff;
+    line-height: min(2.66vw, 51px);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.menu-left:hover .menu-left-inner {
+    transform: translateY(-50%);
+}
+
+.menu-left img {
+    width: min(0.73vw, 14px);
+    height: auto;
+}
+.burger-menu-button_span {
+    display: block;
+    width: min(1.98vw, 38px);
+    height: min(0.1vw, 2px);
+    background-color: #2F80ED;
+}
+
+.number {
+    font-size: min(0.89vw, 17px);
+}
+
+.menu-left {
+    display: flex;
+}
+
+.menu-left.menu-mobile {
+    display: none;
+}
+.callback-btn-min {
+    transition: transform 0.3s ease;
+}
+.callback-btn-min:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .menu-left:not(.menu-mobile) {
+        display: none;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 768px) {
+    .menu-left.menu-mobile {
+        display: flex;
+    }
+}
+
+@media (max-width: 360px) {
+    .menu-left.menu-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) { 
+    .nav-right-scroll {
+        font-size: min(0.9vw, 13px);
+    }
+
+    .burger-menu-text, .menu-left-flat, .callback-btn {
+        font-size: min(0.9vw, 13px);
+    }
+    .menu-left {
+        width: min(14.1vw, 203px);
+        height: min(2.99vw, 43px);
+    }
+    .number {
+        font-size: min(0.97vw, 14px);
+    }
+    .nav-center {
+        width: min(10.82vw, 155.83px);
+        height: min(1.74vw, 25px);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        /* height: min(4.2vw, 43px); */
+    }
+}
+
+@media (min-width: 361px) and (max-width: 768px) {
+    .header {
+        /* height: min(5.6vw, 43px); */
+        padding: min(5.21vw, 40px);
+        padding-top: min(5.21vw, 40px);
+    }    
+    .burger-menu-text, .menu-left-flat {
+        font-size: min(1.56vw, 12px);
+    }
+    .menu-left, .number, .nav-right {
+        display: none;
+    }
+    .burger-menu-button {
+        gap: min(0.26vw, 5px);
+    } 
+    .nav-center {
+        width: min(20.29vw, 155.83px);
+        height: min(3.26vw, 25px);
+    }
+    .menu-mobile {
+        width: min(24.48vw, 188px);
+        height: min(5.6vw, 43px);
+        font-size: min(1.56vw, 12px);
+        gap: min(1.3vw, 10px);
+    }
+    .menu-mobile img {
+        width: min(1.56vw, 12px);
+        height: auto;
+    }
+    .nav-left {
+        gap: min(8.07vw, 62px);
+    }
+    .callback-btn-mobile {
+        display: block;
+        width: min(5.6vw, 43px);
+        height: min(5.6vw, 43px);
+        border-radius: 50%;
+        border: min(0.13vw, 1px) solid #D7D7D7;
+    }
+    .callback-btn-mobile img {
+        width: 34.15%;
+        height: 34.15%;
+    }
+    .burger-menu-button {
+        gap: min(0.52vw, 4px);
+    }
+    .burger-menu-button_span {
+        width: min(4.95vw, 38px);
+        height: min(0.26vw, 2px);
+    }
+}
+
+@media (max-width: 360px) {
+    .header {
+        /* height: min(11.39vw, 41px); */
+        padding-bottom: min(5.56vw, 20px);
+        padding-top: min(5.56vw, 20px);
+    }
+    .burger-menu-text, .nav-right {
+        display: none;
+    }
+    .callback-btn-min {
+        display: block;
+        width: min(11.39vw, 360px);
+        height: min(11.39vw, 360px);
+        border-radius: 50%;
+        border: 1px solid #2F80ED;
+    }
+    .callback-btn-min img {
+        width: 34.15%;
+        height: 34.15%;
+    }
+    .burger-menu-button {
+        gap: min(1.11vw, 4px);
+    }
+    .burger-menu-button_span {
+        width: min(8.06vw, 29px);
+        height: 2px;
+    }
+    .nav-center {
+        width: min(36.11vw, 130px);
+        height: min(5.83vw, 21px);
+    }
+}
