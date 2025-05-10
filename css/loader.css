@@ -34,7 +34,7 @@
     position: absolute;
     inset: -15px;
     margin: auto;
-    background: #de3500;
+    background: #2F80ED;
     animation: diamondLoader 2s linear infinite;
 }
 
